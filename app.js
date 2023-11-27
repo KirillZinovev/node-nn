@@ -69,6 +69,7 @@ if (app.get("env") == "production") {
     res.sendFile(err.message);
   });
 }
+
 if (app.get(`env`) != "development") {
   app.use(function (err, req, res, next) {
     res.status = 404;

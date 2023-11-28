@@ -2,25 +2,45 @@
 @import "./css/bootstrap-5.3.2/scss/variables";
 @import "./css/bootstrap-5.3.2/scss/variables-dark";
 @import "./css/bootstrap-5.3.2/scss/mixins";
+@import "./css/bootstrap-5.3.2/scss/navbar";
 
-* {
-  //   background: rgb(160, 16, 16);
-  font-size: 20px;
-  background: rgb(43, 226, 150);
+a.nav-link {
+  display: block;
+  color: #6f77a4;
+  text-decoration: none;
+  background: none;
+  border: 0;
+}
+a {
+}
+
+a.navbar-brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  color: #6f77a4;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .btn.btn-outline-success {
-  --bs-btn-color: #070802;
-  --bs-btn-border-color: #0a0c04;
-  --bs-btn-hover-color: rgb(22, 9, 9);
-  --bs-btn-hover-bg: #0d0f06;
-  --bs-btn-hover-border-color: #0e0f0b;
+  --bs-btn-color: #6f77a4;
+  --bs-btn-border-color: #6f77a4;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6f77a4;
+  --bs-btn-hover-border-color: #6f77a4;
   --bs-btn-focus-shadow-rgb: 25, 135, 84;
-  --bs-btn-active-color: rgb(14, 10, 10);
-  --bs-btn-active-bg: #0c0e06;
-  --bs-btn-active-border-color: #0b0c09;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8189b4;
+  --bs-btn-active-border-color: #6f77a4;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #10110a;
+  --bs-btn-disabled-color: #6f77a4;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #080805;
+  --bs-btn-disabled-border-color: #6f77a4;
   --bs-gradient: none;
+}
+p {
+  color: #6f77a4;
+  text-align: center;
+  font-size: 30px;
 }
